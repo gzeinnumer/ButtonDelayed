@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context=".app.MainActivity"
+        tools:ignore="HardcodedText,ContentDescription,UnusedAttribute">
+
+        <com.flod.loadingbutton.LoadingButton
+            android:id="@+id/loadingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_red_light"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:padding="8dp"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:endSuccessDrawable="@drawable/ic_successful"
+            app:radius="10dp"
+            app:enableShrink="true"
+            app:shrinkShape="Oval"
+            app:endFailDrawable="@drawable/ic_fail"
+            app:loadingDrawablePosition="Start" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:ignore="ButtonStyle">
+
+            <Button
+                android:id="@+id/btCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="cancel" />
+
+            <Button
+                android:id="@+id/btFail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="fail" />
+
+            <Button
+                android:id="@+id/btComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="complete" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
